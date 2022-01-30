@@ -16,7 +16,7 @@
         <ul class="nav navbar-nav side-nav">
             <li class="active"><a href="/Osint-Suite/index.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li><a href="/Osint-Suite/etc/prog/Twintell/twintell_index.php"><i class="fa fa-twitter"></i> Twintell</a></li>
-            <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
+            <!-- <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li> 
             <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
             <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
             <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
@@ -28,10 +28,10 @@
                     <li><a href="#">Dropdown Item</a></li>
                     <li><a href="#">Another Item</a></li>
                     <li><a href="#">Third Item</a></li>
-                    <li><a href="#">Last Item</a></li>
+                    <li><a href="#">Last Item</a></li> 
                 </ul>
-            </li>
-        </ul>
+            </li> -->
+        </ul> 
         <!--
         <ul class="nav navbar-nav navbar-right navbar-user">
           <li class="dropdown messages-dropdown">
