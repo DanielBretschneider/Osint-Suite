@@ -35,12 +35,23 @@
         <div id="wrapper">
 
             <!-- Include Sidebar -->
-            <?php include '../../layout/sidebar.php'; ?>
+            <?php
+            # include navbar    
+            include '../../layout/sidebar.php';
 
+            # include API keys
+            include './TwitterAPIExchangeSettings.php';
+            
+            # include formatted
+            include '../../base/format/Formatter.php';
+
+            # include twiter API Exchange
+            require_once './TwitterAPIExchange.php';
+            ?>
 
             <div id="page-wrapper">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
                         <h1>Twintell <small>Twitter Intelligence</small></h1>
                         <ol class="breadcrumb">
                             <li class="active"><i class="fa fa-dashboard"></i> Search for Twitter Usernames</li>
@@ -49,11 +60,42 @@
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                             Welcome to my OSINT Tool Suite! 
                         </div>
-                        <!-- CODE -->
+                        <!-- ========== CODE ============= -->
 
-                       
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><b>Search Usernames</b></div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <form action="twintell_usernames.php" method="post">
+                                        <input class="form-control" name="username">
+                                        <p class="help-block">Input text, works like 'LIKE' function in SQL</p>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
 
-                        <!-- CODE END -->
+                        <!-- List starts here -->
+                        <br />
+                        <h2>Found usernames</h2>
+                        <?php
+                        if (isset($_POST['username'])) {
+                            $url = "https://api.twitter.com/1.1/users/search.json";
+                            $requestMethod = "GET";
+                            $uname = $_POST['username'];
+                            $getfield = '?q=' . $uname;
+
+                            $twitter = new TwitterAPIExchange($settings);
+                            $data = $twitter->setGetfield($getfield)
+                                    ->buildOauth($url, $requestMethod)
+                                    ->performRequest();
+                            
+                            $namelist = twitter_parse_username_json($data);
+                            print_string_array($namelist);
+                        }
+                        ?>
+
+                        <!-- ========= CODE END =============-->
                     </div><!-- /#page-wrapper -->
 
                 </div><!-- /#wrapper -->
