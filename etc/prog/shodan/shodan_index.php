@@ -59,30 +59,30 @@
                                 <!-- Usernames -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET users/search</b></h3>
+                                        <h3 class="panel-title"><b><code>GET /shodan/host/{ip}</code></b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="twintell_usernames.php">Search and get users, or companies.</a>
+                                        <a href="twintell_usernames.php">Returns all services that have been found on the given host IP.</a>
                                     </div>
                                 </div>
                                 
                                 <!-- timeline -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET statuses/user_timeline</b></h3>
+                                        <h3 class="panel-title"><b><code>GET /shodan/host/count</code></b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="twintell_usernames.php">Returns a collection of most recent Tweets posted by a user.</a>
+                                        <a href="twintell_usernames.php">Returns total number of hosts that matched specific query.</a>
                                     </div>
                                 </div
                                 
                                 <!-- followers -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET followers/list</b></h3>
+                                        <h3 class="panel-title"><b><code>GET /shodan/host/search</code></b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="twintell_usernames.php">Returns a cursored collection of user objects for users following the specified user.</a>
+                                        <a href="twintell_usernames.php">Search Shodan using the same query syntax as the website and use facets to get summary information.</a>
                                     </div>
                                 </div>
                                 
@@ -94,30 +94,30 @@
                                 <!-- Usernames -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET friends/list</b></h3>
+                                        <h3 class="panel-title"><b><code>GET /shodan/ports</code></b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="twintell_usernames.php">Returns friends of specific user.</a>
+                                        <a href="twintell_usernames.php">List all ports that Shodan is crawling on the Internet.</a>
                                     </div>
                                 </div>
                                 
                                 <!-- timeline -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET account/settings</b></h3>
+                                        <h3 class="panel-title"><b><code>GET /shodan/protocols</code></b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="twintell_usernames.php">Returns settings for the authenticating user.</a>
+                                        <a href="twintell_usernames.php">List all protocols that can be used when performing internet scans.</a>
                                     </div>
                                 </div
                                 
                                 <!-- followers -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET trends/place</b></h3>
+                                        <h3 class="panel-title"><b><code>GET /shodan/scan</code></b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="twintell_usernames.php">Returns the top 50 trending topics for a specific <code>id</code>, if trending information is available for it.</a>
+                                        <a href="twintell_usernames.php">Request Shodan to crawl an IP/ netblock</a>
                                     </div>
                                 </div>
                                 
@@ -129,10 +129,20 @@
                                 <!-- Usernames -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET saved_searches/list</b></h3>
+                                        <h3 class="panel-title"><b><code>GET /dns/resolve</code></b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="twintell_usernames.php">Returns the authenticated user's saved search queries.</a>
+                                        <a href="twintell_usernames.php">DNS lookup - Look up the IP address for the provided list of hostnames.</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Usernames -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><b><code>GET /tools/myip</code></b></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <a href="twintell_usernames.php">Get your current IP address as seen from the Internet.</a>
                                     </div>
                                 </div>
                                 

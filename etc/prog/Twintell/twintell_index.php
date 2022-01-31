@@ -59,7 +59,7 @@
                                 <!-- Usernames -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET users/search</b></h3>
+                                        <h3 class="panel-title"><b><code>GET users/search</code></b></h3>
                                     </div>
                                     <div class="panel-body">
                                         <a href="twintell_usernames.php">Search and get users, or companies.</a>
@@ -69,7 +69,7 @@
                                 <!-- timeline -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET statuses/user_timeline</b></h3>
+                                        <h3 class="panel-title"><b><code>GET statuses/user_timeline</code></b></h3>
                                     </div>
                                     <div class="panel-body">
                                         <a href="twintell_usernames.php">Returns a collection of most recent Tweets posted by a user.</a>
@@ -79,7 +79,7 @@
                                 <!-- followers -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET followers/list</b></h3>
+                                        <h3 class="panel-title"><b><code>GET followers/list</code></b></h3>
                                     </div>
                                     <div class="panel-body">
                                         <a href="twintell_usernames.php">Returns a cursored collection of user objects for users following the specified user.</a>
@@ -94,7 +94,7 @@
                                 <!-- Usernames -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET friends/list</b></h3>
+                                        <h3 class="panel-title"><b><code>GET friends/list</code></b></h3>
                                     </div>
                                     <div class="panel-body">
                                         <a href="twintell_usernames.php">Returns friends of specific user.</a>
@@ -104,7 +104,7 @@
                                 <!-- timeline -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET account/settings</b></h3>
+                                        <h3 class="panel-title"><b><code>GET account/settings</code></b></h3>
                                     </div>
                                     <div class="panel-body">
                                         <a href="twintell_usernames.php">Returns settings for the authenticating user.</a>
@@ -114,7 +114,7 @@
                                 <!-- followers -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET trends/place</b></h3>
+                                        <h3 class="panel-title"><b><code>GET trends/place</code></b></h3>
                                     </div>
                                     <div class="panel-body">
                                         <a href="twintell_usernames.php">Returns the top 50 trending topics for a specific <code>id</code>, if trending information is available for it.</a>
@@ -129,7 +129,7 @@
                                 <!-- Usernames -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><b>GET saved_searches/list</b></h3>
+                                        <h3 class="panel-title"><b><code>GET saved_searches/list</code></b></h3>
                                     </div>
                                     <div class="panel-body">
                                         <a href="twintell_usernames.php">Returns the authenticated user's saved search queries.</a>
