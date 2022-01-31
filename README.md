@@ -7,7 +7,8 @@ Code is written in master branch.
 
 ## Dashboard
 
-![osi_dashboard](https://user-images.githubusercontent.com/8721711/151831872-3ca76cb9-046e-4f15-9102-2a5056fd5afd.png)
+![osi_dashboard](https://user-images.githubusercontent.com/8721711/151839616-2007c394-a1e1-4997-923f-3f457c4b1e93.png)
+
 
 ### Twintell Dashboard
 
