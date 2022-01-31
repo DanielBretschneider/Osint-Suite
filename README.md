@@ -22,3 +22,9 @@ Code is written in master branch.
 
 ![Shodan_dashboard](https://user-images.githubusercontent.com/8721711/151831953-8d13e562-1b07-49e3-8d8e-a041c05c2f74.png)
 
+
+
+
+***
+Special Thanks to:
+https://github.com/ScadaExposure/Shodan-PHP-REST-API
