@@ -3,7 +3,7 @@ Full Tool Suite developed in HTML5/Bootstrap/PHP (using SB Admin v1) to query th
 
 Featuring Twitter and Shodan API (for now)
 
-Code is developed in master branch.
+Code is written in master branch.
 
 ## Dashboard
 
