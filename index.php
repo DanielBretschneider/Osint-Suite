@@ -54,6 +54,7 @@
                         </div>
                         <!-- insert code here -->
 
+                        <!-- Twintell -->
                         <div class="row">
                             <div class="col-lg-3">
                                 <div class="panel panel-info">
@@ -63,8 +64,8 @@
                                                 <i class="fa fa-comments fa-5x"></i>
                                             </div>
                                             <div class="col-xs-6 text-right">
-                                                <p class="announcement-heading">1</p>
-                                                <p class="announcement-text">Current Project</p>
+                                                <p class="announcement-heading">6</p>
+                                                <p class="announcement-text">Open Tasks</p>
                                             </div>
                                         </div>
                                     </div>
@@ -73,6 +74,36 @@
                                             <div class="row">
                                                 <div class="col-xs-6">
                                                     View Twintell
+                                                </div>
+                                                <div class="col-xs-6 text-right">
+                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Shodan -->
+                            <div class="row">
+                            <div class="col-lg-3">
+                                <div class="panel panel-warning">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <i class="fa fa-comments fa-5x"></i>
+                                            </div>
+                                            <div class="col-xs-6 text-right">
+                                                <p class="announcement-heading">8</p>
+                                                <p class="announcement-text">Open Tasks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="/Osint-Suite/etc/prog/shodan/shodan_index.php">
+                                        <div class="panel-footer announcement-bottom">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    View Shodan
                                                 </div>
                                                 <div class="col-xs-6 text-right">
                                                     <i class="fa fa-arrow-circle-right"></i>

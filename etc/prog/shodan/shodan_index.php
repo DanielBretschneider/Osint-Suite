@@ -62,7 +62,7 @@
                                         <h3 class="panel-title"><b><code>GET /shodan/host/{ip}</code></b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="twintell_usernames.php">Returns all services that have been found on the given host IP.</a>
+                                        <a href="shodan_host.php">Returns all services that have been found on the given host IP.</a>
                                     </div>
                                 </div>
                                 
