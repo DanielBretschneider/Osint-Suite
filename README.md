@@ -4,3 +4,21 @@ Full Tool Suite developed in HTML5/Bootstrap/PHP (using SB Admin v1) to query th
 Featuring Twitter and Shodan API (for now)
 
 Code is developed in master branch.
+
+## Dashboard
+
+![osi_dashboard](https://user-images.githubusercontent.com/8721711/151831872-3ca76cb9-046e-4f15-9102-2a5056fd5afd.png)
+
+### Twintell Dashboard
+
+![Twintell_dashboard](https://user-images.githubusercontent.com/8721711/151831907-2d7923d0-2fdc-4449-9090-2d123a1c913f.png)
+
+#### Twintell Username Finder
+
+![Twintell_usernames](https://user-images.githubusercontent.com/8721711/151832003-2a77f157-b400-4cca-bea4-951d3ce68824.png)
+
+
+### Shodan Dashboard
+
+![Shodan_dashboard](https://user-images.githubusercontent.com/8721711/151831953-8d13e562-1b07-49e3-8d8e-a041c05c2f74.png)
+
