@@ -25,7 +25,7 @@ function twitter_parse_username_json($data) {
     
     # combine name and screen name
     for ($i = 0; $i < count($names); $i++) {
-        array_push($usernames_formatted, $names[$i] . ' (<b>@' . $screen_names[$i] . ')</b>');
+        array_push($usernames_formatted, '<li style="color: #333333">' . $names[$i] . ' (<b style="color: #1DA1F2;">@' . $screen_names[$i] . ')</b></li>');
     }
 
     # return usernames as string array
@@ -38,7 +38,7 @@ function twitter_parse_username_json($data) {
  * 
  * @param type $str_arr
  */
-function print_string_array($str_arr)
+function print_string_array_username_list($str_arr)
 {
     # start unordered list
     echo '<ul>';
@@ -46,7 +46,7 @@ function print_string_array($str_arr)
     # add elements in for loop
     foreach($str_arr as $element)
     {
-        echo '<li style="color: #333333;">' . $element . '</li>';
+        echo $element;
     }
     
     # end unordered list

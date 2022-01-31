@@ -41,7 +41,7 @@
 
             # include API keys
             include './TwitterAPIExchangeSettings.php';
-            
+
             # include formatted
             include '../../base/format/Formatter.php';
 
@@ -62,13 +62,14 @@
                         </div>
                         <!-- ========== CODE ============= -->
 
+                        <!-- Username search form -->
                         <div class="panel panel-default">
                             <div class="panel-heading"><b>Search Usernames</b></div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <form action="twintell_usernames.php" method="post">
                                         <input class="form-control" name="username">
-                                        <p class="help-block">Input text, works like 'LIKE' function in SQL</p>
+                                        <p class="help-block">Input names and keywords here</p>
                                         <button type="submit" class="btn btn-default">Submit</button>
                                     </form>
                                 </div>
@@ -77,23 +78,45 @@
 
                         <!-- List starts here -->
                         <br />
-                        <h2>Found usernames</h2>
                         <?php
                         if (isset($_POST['username'])) {
+                            # define URL for API request
                             $url = "https://api.twitter.com/1.1/users/search.json";
+
+                            # Request Method GET/POST
                             $requestMethod = "GET";
+
+                            # username from textbox
                             $uname = $_POST['username'];
+
+                            # append username to API request URL
                             $getfield = '?q=' . $uname;
 
+                            # twitter API object 
                             $twitter = new TwitterAPIExchange($settings);
+
+                            # data returned from API
                             $data = $twitter->setGetfield($getfield)
                                     ->buildOauth($url, $requestMethod)
                                     ->performRequest();
-                            
+
+                            # parse JSON data into str_arr
                             $namelist = twitter_parse_username_json($data);
-                            print_string_array($namelist);
                         }
                         ?>
+
+                        <!-- results (usernames as HTML list) will be printed here -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <b>Results</b>
+                            </div>
+                            <div class="panel-body">
+                                <?php
+                                # print string array
+                                print_string_array_username_list($namelist);
+                                ?>
+                            </div>
+                        </div>
 
                         <!-- ========= CODE END =============-->
                     </div><!-- /#page-wrapper -->

@@ -52,73 +52,90 @@
                         <!-- CODE -->
 
                         <div class="row">
-                            <div class="col-lg-4">        
-                                <div class="panel panel-primary">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Find Usernames</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <a href="twintell_usernames.php">Search twitter usernames</a>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">List Tweets from User</div>
-                                    <div class="panel-body">
-                                        <a href="#">List tweets from specific user</a>
-                                    </div>
-                                </div>
+                            
+                            <!-- 1st COL -->
+                            <div class="col-lg-4">
+                                
+                                <!-- Usernames -->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        Get e-mail-address from username
+                                        <h3 class="panel-title"><b>GET users/search</b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        <a href="#">Get email-address from user</a>
+                                        <a href="twintell_usernames.php">Search and get users, or companies.</a>
                                     </div>
                                 </div>
+                                
+                                <!-- timeline -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><b>GET statuses/user_timeline</b></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <a href="twintell_usernames.php">Returns a collection of most recent Tweets posted by a user.</a>
+                                    </div>
+                                </div
+                                
+                                <!-- followers -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><b>GET followers/list</b></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <a href="twintell_usernames.php">Returns a cursored collection of user objects for users following the specified user.</a>
+                                    </div>
+                                </div>
+                                
                             </div>
+                            
+                            <!-- 2nd COL -->
                             <div class="col-lg-4">
-                                <div class="panel panel-primary">
+                                
+                                <!-- Usernames -->
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Panel Primary</h3>
+                                        <h3 class="panel-title"><b>GET friends/list</b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        Panel content
+                                        <a href="twintell_usernames.php">Returns friends of specific user.</a>
                                     </div>
                                 </div>
-                                <div class="panel panel-success">
+                                
+                                <!-- timeline -->
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Panel success</h3>
+                                        <h3 class="panel-title"><b>GET account/settings</b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        Panel content
+                                        <a href="twintell_usernames.php">Returns settings for the authenticating user.</a>
                                     </div>
-                                </div>
-                                <div class="panel panel-warning">
+                                </div
+                                
+                                <!-- followers -->
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Panel warning</h3>
+                                        <h3 class="panel-title"><b>GET trends/place</b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        Panel content
+                                        <a href="twintell_usernames.php">Returns the top 50 trending topics for a specific <code>id</code>, if trending information is available for it.</a>
                                     </div>
                                 </div>
+                                
                             </div>
+                            
+                            <!-- 3rd COL -->
                             <div class="col-lg-4">
-                                <div class="panel panel-danger">
+                                
+                                <!-- Usernames -->
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Panel danger</h3>
+                                        <h3 class="panel-title"><b>GET saved_searches/list</b></h3>
                                     </div>
                                     <div class="panel-body">
-                                        Panel content
+                                        <a href="twintell_usernames.php">Returns the authenticated user's saved search queries.</a>
                                     </div>
                                 </div>
-                                <div class="panel panel-info">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Panel info</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        Panel content
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div><!-- /.row -->
 
