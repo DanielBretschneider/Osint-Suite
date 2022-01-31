@@ -16,6 +16,7 @@
         <ul class="nav navbar-nav side-nav">
             <li class="active"><a href="/Osint-Suite/index.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li><a href="/Osint-Suite/etc/prog/Twintell/twintell_index.php"><i class="fa fa-twitter"></i> Twintell</a></li>
+            <li><a href="/Osint-Suite/etc/prog/shodan/shodan_index.php"><i class="fa fa-arrow-circle-up"></i> Shodan</a></li>
             <!-- <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li> 
             <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
             <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
